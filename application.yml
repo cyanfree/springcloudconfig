@@ -16,3 +16,16 @@ spring:
     name: testproject
 server:
   port: 8888
+
+---  
+server:
+  port: 3344
+spring:
+  application:
+    name: config3344
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cyanfree/springcloudconfig.git
+          #uri: git@github.com:252350018/microservicecloud-config.git
