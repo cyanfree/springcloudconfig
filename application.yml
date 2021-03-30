@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  application:
+    name: devproject
+server:
+  port: 8080
+
+---
+spring:
+  profiles: test
+  application:
+    name: testproject
+server:
+  port: 8888
